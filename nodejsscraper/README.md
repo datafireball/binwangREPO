@@ -10,6 +10,8 @@ sudo apt-get install npm
 
 npm install cheerio
 npn install request
-```
 
+nodejs scraping.js
+```
+You will see a list of URLs got printed to the standout and there will be a file `result.txt` contain the scraping result.
 And you should be good to go.
