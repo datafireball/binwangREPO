@@ -12,7 +12,7 @@ class ExampleSpider(scrapy.Spider):
         item = myItem()
         try:
             item['myurl'] = response.url
-            item['myhtml'] = response.body
+            item['myhtml'] = response.body.translate(None, '\n')
             item['mystatus'] = 'fetched'
         except:
             item['mystatus'] = 'failed'
