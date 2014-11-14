@@ -1,0 +1,10 @@
+1:line2 processed
+0:line1 processed
+2:line3 processed
+3:line4 processed
+1:line6 processed
+0:line5 processed
+3:line8 processed
+2:line7 processed
+1:line10 processed
+0:line9 processed
