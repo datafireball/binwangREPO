@@ -1,5 +1,7 @@
 #!/usr/bin/Rscript
 
+source('script.R')
+
 constants <- c(
 "letters", 
 "LETTERS", 
@@ -15,10 +17,6 @@ constants <- c(
 "state.x77" 
 )
 
-learn <- function(command_string){
-    cat('>', command_string, '\n')
-    cat(eval(parse(text=command_string)), '\n', '\n')
-}
 
 for(constant in constants){
     tryCatch(

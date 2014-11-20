@@ -1,0 +1,11 @@
+#!/usr/bin/Rscript
+source('script.R')
+
+cmd1 <- 'all(TRUE, FALSE, TRUE)'
+learn(cmd1)
+
+cmd2 <- 'all(NA, TRUE, TRUE)'
+learn(cmd2)
+
+cmd3 <- 'all(NA, TRUE, TRUE, na.rm=TRUE)'
+learn(cmd3)

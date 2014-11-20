@@ -1,0 +1,14 @@
+#!/usr/bin/Rscript
+source('script.R')
+
+cmd1 <- "abbreviate(month.name, minlength=2)"
+learn(cmd1)
+
+cmd2 <- "abbreviate(month.name, minlength=2, strict=TRUE)"
+learn(cmd2)
+
+cmd3 <- "abbreviate(month.name, minlength=2, dot=TRUE)"
+learn(cmd3)
+
+
+
