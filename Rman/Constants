@@ -1,0 +1,31 @@
+#!/usr/bin/Rscript
+
+constants <- c(
+"letters", 
+"LETTERS", 
+"pi", 
+"month.abb", 
+"month.name", "pi", 
+"state.abb", 
+"state.area",
+"state.center",
+"state.division",
+"state.name",
+"state.region",
+"state.x77" 
+)
+
+learn <- function(command_string){
+    cat('>', command_string, '\n')
+    cat(eval(parse(text=command_string)), '\n', '\n')
+}
+
+for(constant in constants){
+    tryCatch(
+        {learn(constant)},
+        error=function(e){
+            msg <- as.character(e)
+            return(msg)
+        }
+    )
+}
