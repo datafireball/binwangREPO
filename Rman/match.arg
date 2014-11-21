@@ -1,0 +1,8 @@
+#!/usr/bin/Rscript
+source('script.R')
+
+cmd1 <- "match.arg('a', choices=c('a', 'b', 'c'))"
+learn(cmd1)
+
+cmd2 <- "match.arg('d', choices=c('a', 'b', 'c'))"
+learn(cmd2)
