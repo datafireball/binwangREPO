@@ -1,0 +1,8 @@
+#!/usr/bin/Rscript
+source('script.R')
+
+cmd1 <- "dirname('/tmp/test')"
+learn(cmd1)
+
+cmd2 <- "basename('/tmp/test')"
+learn(cmd2)

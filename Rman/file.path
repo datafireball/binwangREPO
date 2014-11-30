@@ -1,0 +1,8 @@
+#!/usr/bin/Rscript
+source('script.R')
+
+cmd1 <- "file.path('/tmp', 'test')"
+learn(cmd1)
+
+cmd2 <- "file.path('/tmp', 'test', fsep='|')"
+learn(cmd2)
