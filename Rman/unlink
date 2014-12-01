@@ -1,0 +1,8 @@
+#!/usr/bin/Rscript
+source('script.R')
+
+write.csv(x=iris, file='a_iris.csv')
+list.files()
+cmd1 <- "unlink('a_iris.csv')"
+learn(cmd1)
+list.files()
