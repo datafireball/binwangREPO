@@ -1,0 +1,16 @@
+# This playbook will download the littler source to tmp, untar, make and install
+---
+- hosts: production
+  remote_user: root
+  tasks:
+  - name: download littler
+    get_url: url=http://dirk.eddelbuettel.com/code/littler/littler-0.2.1.tar.gz dest=/tmp/littler-0.2.1.tar.gz force=yes mode=0440
+
+  - name: unzip archive
+    unarchive: src=/tmp/littler-0.2.1.tar.gz dest=/tmp/ copy=no
+
+  - name: Go to the folder and execute command
+    command: chdir=/tmp/littler-0.2.1/ {{ item }}
+    with_items:
+     - ./bootstrap
+     - make install

@@ -1,0 +1,7 @@
+#Check out playbook_build_littler.yml first, becasue you need littler to be installed first
+---
+- hosts: production
+  remote_user: root
+  tasks:
+  - name: install r packages 
+    command: r -e "install.packages(c('dplyr', 'outliers', 'zoo', 'forecast'), repos='http://cran.rstudio.com')"
