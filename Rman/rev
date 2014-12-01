@@ -1,0 +1,5 @@
+#!/usr/bin/Rscript
+source('script.R')
+
+cmd1 <- "rev(c(1,3,2))"
+learn(cmd1)
